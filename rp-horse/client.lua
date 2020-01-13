@@ -1,5 +1,5 @@
 PlayerHorse = nil
-
+Inventory = {}
 function CreateHorseBlip(Promt, Name)
     local Horse = GetMount(PlayerPedId())
     local Group = Citizen.InvokeNative(0xB796970BD125FCE8, Horse, Citizen.ResultAsLong())
@@ -21,4 +21,8 @@ function CreatePlayerHorse(Model)
         SetPedOnMount(PlayerPedId(), PlayerHorse, -1, false)
         CreateHorseBlip("Pepega Clap", "Pepega Clap")
     end
+end
+
+function SyncInventory(Data)
+    Inventory = Data 
 end
