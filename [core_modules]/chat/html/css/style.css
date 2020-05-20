@@ -1,0 +1,167 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+
+* {
+	/* font-family: 'Barlow Condensed', sans-serif; */
+	font-family: "Courier New", Courier, monospace;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.no-grow {
+	flex-grow: 0;
+}
+
+em {
+	font-style: normal;
+}
+
+#app {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+	background-color: transparent;
+}
+
+.chat-window {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	width: 20%;
+	height: 25%;
+	background-image: url("../assets/hud_menu_4a.png");
+	background-color: rgba(255, 255, 255, 0);
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+}
+
+.chat-messages {
+	max-height: 100%;
+	/* font-size: 8px; */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+
+.chat-input {
+	/* font-size: 0.9rem; */
+	position: absolute;
+	top: 25%;
+	left: 30px;
+	width: 30%;
+	/* box-sizing: border-box; */
+}
+
+textarea {
+	/* font-size: 20px; */
+	text-overflow: ellipsis;
+	display: block;
+	/* box-sizing: border-box; */
+	padding-top: 0%;
+	padding-left: 16px;
+	color: #ffffff;
+	background-color: rgba(79, 99, 136, 0.6);
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	height: 32px;
+	line-height: 32px;
+	min-height: 32px;
+	overflow: hidden;
+	resize: none;
+}
+
+textarea:focus, input:focus {
+	outline: none;
+}
+
+.msg {
+	margin-bottom: 5px;
+}
+
+.suggestions {
+	list-style-type: none;
+	padding: 4px;
+	padding-left: 16px;
+	/* font-size: 18px; */
+	/* box-sizing: border-box; */
+	color: #ffffff;
+	background-color: rgba(79, 99, 136, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 100%;
+}
+
+.suggestion:first-child {
+	margin-top: 5px;
+}
+
+small.help {
+	padding-left: 10px;
+	color: #aaaaaa;
+}
+
+small.help::before {
+	content: '*';
+	color: rgba(255, 0, 0, 0.62);
+}
+
+.disabled {
+	margin-top: -10px;
+	color: #ff0000;
+}
+
+.suggestion {
+	margin-bottom: 5px;
+}
+
+.chat-message {
+	display: inline-block !important;
+	padding: 10px;
+	margin: 4px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-radius: 8px;
+	background-color: rgba(77, 77, 77, 0.8);
+	width: fit-content;
+	max-width: 100%;
+	overflow: hidden;
+	word-break: break-word;
+}
+
+.chat-message-body {
+	/* font-size: 18px; */
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.chat-message.advert {
+	background-color: rgba(41, 94, 138, 0.8);
+}
+
+.chat-message.server {
+	background-color: rgba(187, 163, 30, 0.8);
+	/* color: black;
+	font-weight: bold; */
+}
+
+.chat-message.system {
+	background-color: rgba(170, 90, 30, 0.8);
+}
+
+.chat-message.emergency {
+	background-color: rgba(235, 69, 69, 0.8);
+}
+
+.chat-message.nonemergency {
+	background-color: rgba(163, 41, 41, 0.8);
+}

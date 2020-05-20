@@ -1,0 +1,11 @@
+RegisterServerEvent('Lumberjack.StartJob')
+AddEventHandler('Lumberjack.StartJob', function()
+    TriggerClientEvent('Lumberjack.Start', source)
+    TriggerClientEvent("RP-Notify.DisplayLeftNotification", source, "Lumberjack", "Go to the marked position", "HUD_TOASTS", "toast_player_deadeye", 10000)
+end)
+
+RegisterServerEvent('Lumberjack.RecieveWood')
+AddEventHandler('Lumberjack.RecieveWood', function(dinero, xp)
+    local RandomQuantity = math.random(2, 6)
+    TriggerClientEvent("RP-Notify.DisplayLeftNotification", source, "Lumberjack", "Has recieved " .. RandomQuantity .. " of wood", "HUD_TOASTS", "toast_player_deadeye", 10000)
+end)

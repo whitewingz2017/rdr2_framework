@@ -1,0 +1,30 @@
+* {
+	
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-color: transparent !important;
+	width: 100vw;
+	height: 100vh;
+	display: block;
+}
+
+div {
+	width: 100vw;
+	height: 100vh;
+}
+
+.container {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 64px;
+	width: 64px;
+}
